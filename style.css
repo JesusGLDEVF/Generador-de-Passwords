@@ -1,0 +1,104 @@
+body { /* Estilo de la pagina */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+h2{
+  text-shadow: 2px 2px 4px #6205f8;
+}
+
+.container { /* Caja donde se localiza el generador de pass */
+    background-color: rgb(29, 29, 29);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #6205f8;
+    width: 350px;
+    text-align: center;
+}
+
+.password-display-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.password-display { /* Donde se muestra la contraseña*/
+    font-size: 1.2em;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.copy-btn { /* El boton de copiar contraseña*/
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.copy-btn:hover {
+    background-color: #666;
+}
+
+/* Barra de numero de caracteres de la pass */
+
+.slider {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.options label {
+    display: block;
+    margin: 5px 0;
+}
+
+.strength {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Barra de fuerza de pass*/
+
+.bars {
+    display: flex;
+    gap: 3px;
+}
+
+.bar {
+    width: 20px;
+    height: 10px;
+    background-color: #444;
+    border-radius: 3px;
+}
+
+.bar.active {
+    background-color: #0f0;
+}
+
+/* Boton de generar pass */
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}

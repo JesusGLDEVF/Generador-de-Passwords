@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <title>Generador de Passwords</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Generador de Passwords</h2>
+        <div class="password-display-container">
+            <div class="password-display" id="passwordDisplay">Tu contraseña</div>
+            <button class="copy-btn" id="copyBtn">Copiar</button>
+        </div>
+        <input type="range" min="8" max="25" value="10" class="slider" id="charLengthSlider"> <!-- el valor minimo de la pass es de 8 caracteres y maximo de 25 -->
+        <div>Longitud de caracteres: <span id="charLengthValue">10</span></div> <!-- Empieza en 10 caracteres por defecto -->
+        <div class="options"> <!-- Las opciones con las que se puede crear la pass -->
+            <label><input type="checkbox" id="uppercase" checked> Incluir letras mayúsculas</label>
+            <label><input type="checkbox" id="lowercase" checked> Incluir letras minúsculas</label>
+            <label><input type="checkbox" id="numbers" checked> Incluir números</label>
+            <label><input type="checkbox" id="symbols"> Incluir símbolos</label>
+        </div>
+        <div class="strength"> <!-- Aqui va la barra de fuerza de la pass -->
+            <span>Fuerza de la contraseña:</span>
+            <div class="bars" id="strengthBars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <!-- Aqui se muestra el boton para generar la pass  -->
+        <button id="generateBtn">Generar</button>
+    </div>
+
+</body>
+
+</html>
